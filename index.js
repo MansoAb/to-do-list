@@ -29,7 +29,7 @@ const todoList = {
   },
 
   remove: function (index) {
-    this.items.slice(index, 1);
+    this.items.splice(index, 1);
   },
 
   print: function (index) {
@@ -46,6 +46,5 @@ const todoList = {
 };
 todoList.printAll();
 
-todoList.complete(2)
+todoList.complete(2);
 todoList.printAll();
-
